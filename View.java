@@ -16,7 +16,7 @@ public class View {
         type = new JLabel("Suit Type: -", SwingConstants.CENTER);
         checkb = new JButton("checking");
         resultLabel = new JLabel("Id?", SwingConstants.CENTER);
-        frame.add(new JLabel("Id :"));
+        frame.add(new JLabel("please input Id int 6 digit:"));
         frame.add(idinput);
         frame.add(checkb);
         frame.add(resultLabel);

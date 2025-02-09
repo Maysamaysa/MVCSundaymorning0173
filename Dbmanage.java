@@ -19,8 +19,8 @@ public class Dbmanage {
 
     public static void saveSuits(List<suit> suits) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter("Super.csv"))) {
-            for (suit suit : suits) {
-                bw.write(suit.getId() + "," + suit.getType() + "," + suit.getDurability() + "\n");
+            for (suit suit1 : suits) {
+                bw.write(suit1.getId() + "," + suit1.getType() + "," + suit1.getDurability() + "\n");
             }
         } catch (IOException e) {
             System.out.println("Error saving: " + e.getMessage());
