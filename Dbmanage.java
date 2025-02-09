@@ -3,7 +3,7 @@ import java.util.*;
 //to load , update database
 public class Dbmanage {
     public static List<suit> loadSuits() {
-        List<suit> suits = new ArrayList<>();
+        ArrayList<suit> suits = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader("Super.csv"))) {
             String line;
             while ((line = br.readLine()) != null) {

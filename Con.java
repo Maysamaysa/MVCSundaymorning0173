@@ -25,7 +25,14 @@ public class Con {
                 return;
             }
         }
-        view.setResult("404 Not found!");
+        if(view.getSuitId().length()!=6){
+            view.setResult("Please input valid int Id 6 digits no 0 in first");
+            try {
+                Integer.parseInt(view.getSuitId());
+            } catch (Exception e) {
+                view.setResult("int Only plz");
+            }
+        }else view.setResult("404 Not found!");
     }
 //show pop up window
     void showRepairDialog(suit suit) {
