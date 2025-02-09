@@ -7,6 +7,7 @@ public class View {
     JButton checkb;
     JLabel resultLabel;
     JLabel type;
+    //frame//pop up repair in Con
     public View() {
         frame = new JFrame("MVC Sunday ข้อ 2");
         frame.setSize(500, 250);
